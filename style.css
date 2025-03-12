@@ -1,21 +1,27 @@
 /* style.css */
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Modern, readable font */
     margin: 0;
     padding: 0;
-    background-image: url('background.02.jpg');
+    background-image: url('background.01.jpg');
+    background-image: image-set(
+        url('background.01.jpg') 1x,
+        url('background.01@2x.jpg') 2x
+    );
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white; /* Changed font color to white for better contrast */
-    text-align: center; /* Center everything in the body */
+    color: white; /* White text for contrast */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle dark overlay for clarity */
+    background-blend-mode: overlay; /* Blends overlay with image */
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.5); /* Darker, semi-transparent background for nav */
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker nav background */
+    padding: 15px 0; /* Increased padding */
     position: sticky;
     top: 0;
     z-index: 100;
@@ -23,63 +29,68 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: white; /* White font for nav links */
-    margin: 0 15px;
-    font-size: 18px; /* Slightly larger font for nav links */
-    padding: 5px 10px;
+    color: white;
+    margin: 0 20px; /* Increased margin */
+    font-size: 18px;
+    padding: 10px 15px; /* Increased padding */
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 header {
-    padding: 150px 20px 100px; /* Increased padding for better visibility */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Stronger text shadow */
+    padding: 200px 20px 150px; /* Increased padding for emphasis */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Stronger text shadow */
 }
 
 header h1 {
-    font-size: 4em; /* Larger font size for the store name */
-    margin-bottom: 10px;
-    font-weight: bold;
+    font-size: 4.5em; /* Larger, bolder title */
+    margin-bottom: 15px;
+    font-weight: 700; /* Bold font weight */
+    letter-spacing: 1px; /* Slight letter spacing */
 }
 
 header p {
-    font-size: 1.5em; /* Larger font size for the motto */
+    font-size: 1.8em; /* Larger motto font */
     font-style: italic;
+    font-weight: 500; /* Medium font weight */
 }
 
 main {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker, semi-transparent background for main */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger box shadow */
-    color: white; /* White font color for main content */
-    font-size: 1.1em; /* Slightly larger font for main content */
+    margin: 30px auto; /* Increased margin */
+    padding: 30px; /* Increased padding */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker main background */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.6; /* Improved line height */
 }
 
 footer {
-    padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker, semi-transparent background for footer */
-    margin-top: 20px;
+    padding: 25px 0; /* Increased padding */
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
 }
 
 @media (max-width: 768px) {
     nav a {
         font-size: 16px;
-        margin: 0 10px;
+        margin: 0 15px;
+        padding: 8px 12px;
     }
     header h1 {
-        font-size: 3em;
+        font-size: 3.5em;
     }
     header p {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
     main {
-        font-size: 1em;
+        font-size: 1.1em;
+        padding: 20px;
     }
 }
