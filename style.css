@@ -1,7 +1,7 @@
 /* style.css */
 
 body {
-    font-family: 'Arial', sans-serif; /* Example font, adjust as needed */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-image: url('background.01.jpg');
@@ -9,15 +9,13 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgba(244, 240, 236, 0.7); /* Light beige overlay */
-    background-blend-mode: overlay; /* Blend the image with the overlay */
-    color: #333;
+    color: white; /* Changed font color to white for better contrast */
+    text-align: center; /* Center everything in the body */
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5); /* Darker, semi-transparent background for nav */
     padding: 10px;
-    text-align: center;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -25,33 +23,31 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: white; /* White font for nav links */
     margin: 0 15px;
-    font-size: 16px;
+    font-size: 18px; /* Slightly larger font for nav links */
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #e0d8d0;
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
 }
 
 header {
-    text-align: center;
-    padding: 100px 20px;
-    color: #333;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    padding: 150px 20px 100px; /* Increased padding for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Stronger text shadow */
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 4em; /* Larger font size for the store name */
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 header p {
-    font-size: 1.2em;
+    font-size: 1.5em; /* Larger font size for the motto */
     font-style: italic;
 }
 
@@ -59,27 +55,31 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.5); /* Darker, semi-transparent background for main */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger box shadow */
+    color: white; /* White font color for main content */
+    font-size: 1.1em; /* Slightly larger font for main content */
 }
 
 footer {
-    text-align: center;
     padding: 20px 0;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5); /* Darker, semi-transparent background for footer */
     margin-top: 20px;
 }
 
 @media (max-width: 768px) {
     nav a {
-        font-size: 14px;
+        font-size: 16px;
         margin: 0 10px;
     }
     header h1 {
-        font-size: 2.5em;
+        font-size: 3em;
     }
     header p {
+        font-size: 1.2em;
+    }
+    main {
         font-size: 1em;
     }
 }
