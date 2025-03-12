@@ -1,14 +1,16 @@
 /* style.css */
 
 body {
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif; /* Example font, adjust as needed */
     margin: 0;
     padding: 0;
     background-image: url('background.01.jpg');
-    background-size: cover; /* Cover the entire viewport */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent image repetition */
-    background-attachment: fixed; /* Optional: Fix the background during scroll */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(244, 240, 236, 0.7); /* Light beige overlay */
+    background-blend-mode: overlay; /* Blend the image with the overlay */
     color: #333;
 }
 
