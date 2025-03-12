@@ -4,19 +4,19 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f0ec; /* Light beige background */
     background-image: url('background.01.jpg');
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay; /*Blend the image with the background color*/
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Optional: Fix the background during scroll */
     color: #333;
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white nav bar */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     text-align: center;
-    position: sticky; /*Sticky navigation*/
+    position: sticky;
     top: 0;
     z-index: 100;
 }
@@ -32,14 +32,14 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #e0d8d0; /* Light hover color */
+    background-color: #e0d8d0;
 }
 
 header {
     text-align: center;
     padding: 100px 20px;
     color: #333;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight text shadow for readability */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -57,7 +57,7 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white main content area */
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -69,7 +69,6 @@ footer {
     margin-top: 20px;
 }
 
-/*Responsive design adjustments*/
 @media (max-width: 768px) {
     nav a {
         font-size: 14px;
