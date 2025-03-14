@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Thrift Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="feedback-container">
+        <div class="feedback-box">
+            <h2>We Value Your Feedback</h2>
+            <p>Help us improve by sharing your thoughts.</p>
+            <form>
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="rating">Rate Your Experience</label>
+                    <select id="rating" required>
+                        <option value="" disabled selected>Select a rating</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="average">Average</option>
+                        <option value="poor">Poor</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="message">Your Feedback</label>
+                    <textarea id="message" placeholder="Share your thoughts..." required></textarea>
+                </div>
+                <button type="submit" class="feedback-btn">Submit Feedback</button>
+            </form>
+            <p class="contact-info">Need help? <a href="contact.html">Contact us</a></p>
+        </div>
+    </div>
+</body>
+</html>
