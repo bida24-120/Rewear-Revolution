@@ -7,12 +7,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white; /* Changed font color to white for better contrast */
-    text-align: center; /* Center everything in the body */
+    color: white;
+    text-align: center;
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.5); /* Darker, semi-transparent background for nav */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     position: sticky;
     top: 0;
@@ -21,51 +21,97 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: white; /* White font for nav links */
+    color: white;
     margin: 0 15px;
-    font-size: 18px; /* Slightly larger font for nav links */
+    font-size: 18px;
     padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    background-color: rgba(255, 255, 255, 0.2);
 }
-
 header {
-    padding: 150px 20px 100px; /* Increased padding for better visibility */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Stronger text shadow */
+    padding: 150px 20px 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 header h1 {
-    font-size: 4em; /* Larger font size for the store name */
+    font-size: 4em;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 header p {
-    font-size: 1.5em; /* Larger font size for the motto */
+    font-size: 1.5em;
     font-style: italic;
 }
-
 main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker, semi-transparent background for main */
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger box shadow */
-    color: white; /* White font color for main content */
-    font-size: 1.1em; /* Slightly larger font for main content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1.1em;
 }
-
 footer {
     padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Darker, semi-transparent background for footer */
+    background-color: rgba(0, 0, 0, 0.5);
     margin-top: 20px;
 }
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
 
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+    border-color: #ff6b6b;
+    outline: none;
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e55b5b;
+}
 @media (max-width: 768px) {
     nav a {
         font-size: 16px;
@@ -80,226 +126,33 @@ footer {
     main {
         font-size: 1em;
     }
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f5f0e1; /* Soft, neutral background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
 
-/* Centering the sign-up box */
-.signup-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+    .signup-container,
+    .signin-container,
+    .donate-container,
+    .feedback-container {
+        flex-direction: column;
+    }
 
-/* Sign-up form box */
-.signup-box {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-p {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-/* Input fields */
-.input-group {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.input-group input:focus {
-    border-color: #ff6b6b;
-    outline: none;
-}
-
-/* Sign-up button */
-.signup-btn {
-    background: #ff6b6b; /* Elegant coral color */
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.signup-btn:hover {
-    background: #e55b5b;
-}
-
-/* Login link */
-.login-link {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.login-link a {
-    color: #ff6b6b;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.login-link a:hover {
-    text-decoration: underline;
-}
-/* Centering the sign-in box */
-.signin-container {
+    .signup-box,
+    .signin-box,
+    .donate-box,
+    .feedback-box {
+        max-width: 100%;
+        padding: 20px;
+    }
+/* General Form Box Styling */
+.signup-container, .signin-container, .donate-container, .feedback-container, .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #f5f0e1; /* Soft, neutral background */
+    background-color: #f5f0e1;
 }
 
-/* Sign-in form box */
-.signin-box {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-p {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-/* Input fields */
-.input-group {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.input-group input:focus {
-    border-color: #ff6b6b;
-    outline: none;
-}
-
-/* Forgot password */
-.forgot-password {
-    text-align: right;
-    margin-bottom: 15px;
-}
-
-.forgot-password a {
-    color: #ff6b6b;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.forgot-password a:hover {
-    text-decoration: underline;
-}
-
-/* Sign-in button */
-.signin-btn {
-    background: #ff6b6b; /* Elegant coral color */
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.signin-btn:hover {
-    background: #e55b5b;
-}
-
-/* Sign-up link */
-.signup-link {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.signup-link a {
-    color: #ff6b6b;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.signup-link a:hover {
-    text-decoration: underline;
-}
-/* Centering the donate form */
-.donate-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #f5f0e1; /* Soft, neutral background */
-}
-
-/* Donate form box */
-.donate-box {
+/* Individual Form Boxes */
+.signup-box, .signin-box, .donate-box, .feedback-box, .contact-box {
     background: #ffffff;
     padding: 40px;
     border-radius: 12px;
@@ -309,6 +162,7 @@ p {
     max-width: 450px;
 }
 
+/* Header inside form boxes */
 h2 {
     font-size: 24px;
     color: #333;
@@ -320,67 +174,7 @@ p {
     font-size: 14px;
     margin-bottom: 20px;
 }
-
-/* Input fields */
-.input-group {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.input-group input,
-.input-group select,
-.input-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.input-group input:focus,
-.input-group select:focus,
-.input-group textarea:focus {
-    border-color: #ff6b6b;
-    outline: none;
-}
-
-/* Textarea */
-.input-group textarea {
-    height: 100px;
-    resize: none;
-}
-
-/* Donate button */
-.donate-btn {
-    background: #ff6b6b; /* Elegant coral color */
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.donate-btn:hover {
-    background: #e55b5b;
-}
-
-/* Contact info link */
-.contact-info {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
+/* Contact Info Links */
 .contact-info a {
     color: #ff6b6b;
     text-decoration: none;
@@ -390,177 +184,8 @@ p {
 .contact-info a:hover {
     text-decoration: underline;
 }
-/* Centering the feedback form */
-.feedback-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #f5f0e1; /* Soft, neutral background */
-}
 
-/* Feedback form box */
-.feedback-box {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 450px;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-p {
-    color: #777;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
-
-/* Input fields */
-.input-group {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.input-group input,
-.input-group select,
-.input-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.input-group input:focus,
-.input-group select:focus,
-.input-group textarea:focus {
-    border-color: #ff6b6b;
-    outline: none;
-}
-
-/* Textarea */
-.input-group textarea {
-    height: 100px;
-    resize: none;
-}
-
-/* Submit button */
-.feedback-btn {
-    background: #ff6b6b; /* Elegant coral color */
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.feedback-btn:hover {
-    background: #e55b5b;
-}
-
-/* Contact info link */
-.contact-info {
-    margin-top: 10px;
-    font-size: 14px;
-}
-
-.contact-info a {
-    color: #ff6b6b;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-/* About Us Page Styling */
-.about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #f5f0e1; /* Soft, elegant background */
-    padding: 40px;
-}
-
-.about-box {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    max-width: 700px;
-}
-
-h1 {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.tagline {
-    font-size: 18px;
-    color: #ff6b6b;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.about-content p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
-
-h2 {
-    font-size: 22px;
-    color: #444;
-    margin-top: 20px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-ul li {
-    font-size: 16px;
-    color: #666;
-    padding: 5px 0;
-}
-
-ul li strong {
-    color: #333;
-}
-
-.cta {
-    margin-top: 20px;
-}
-
-.btn {
+.cta .btn {
     background: #ff6b6b;
     color: white;
     text-decoration: none;
@@ -568,123 +193,9 @@ ul li strong {
     border-radius: 8px;
     font-size: 16px;
     transition: 0.3s;
-    margin: 5px;
-    display: inline-block;
 }
 
-.btn:hover {
+.cta .btn:hover {
     background: #e55b5b;
 }
-/* Contact Us Page Styling */
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #f5f0e1; /* Soft background color */
-    padding: 40px;
-}
-
-.contact-box {
-    background: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-p {
-    color: #777;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.input-group {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.input-group label {
-    display: block;
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.input-group input,
-.input-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-.input-group input:focus,
-.input-group textarea:focus {
-    border-color: #ff6b6b;
-    outline: none;
-}
-
-.input-group textarea {
-    height: 150px;
-    resize: none;
-}
-
-/* Submit button */
-.contact-btn {
-    background: #ff6b6b;
-    color: white;
-    border: none;
-    width: 100%;
-    padding: 14px;
-    font-size: 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.contact-btn:hover {
-    background: #e55b5b;
-}
-
-/* Contact Info */
-.contact-info {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #555;
-}
-
-.contact-info h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.contact-info p {
-    margin: 5px 0;
-}
-
-.contact-info p a {
-    color: #ff6b6b;
-    text-decoration: none;
-}
-
-.contact-info p a:hover {
-    text-decoration: underline;
-}
-
-
-
-
 
