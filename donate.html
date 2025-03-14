@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Thrift Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="donate-container">
+        <div class="donate-box">
+            <h2>Make a Difference</h2>
+            <p>Your donations help us give pre-loved items a second life.</p>
+            <form>
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="item-type">Type of Donation</label>
+                    <select id="item-type" required>
+                        <option value="" disabled selected>Select item category</option>
+                        <option value="clothing">Clothing & Accessories</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="furniture">Furniture & Home Decor</option>
+                        <option value="books">Books & Media</option>
+                        <option value="toys">Toys & Baby Items</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="message">Additional Details</label>
+                    <textarea id="message" placeholder="Describe the items you're donating (optional)"></textarea>
+                </div>
+                <button type="submit" class="donate-btn">Donate Now</button>
+            </form>
+            <p class="contact-info">Need help? <a href="contact.html">Contact us</a></p>
+        </div>
+    </div>
+</body>
+</html>
