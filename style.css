@@ -9,7 +9,7 @@ body {
 
 /* Apply background image only on the home page */
 .home {
-    background: url('background.02.jpg') no-repeat center center/cover;
+    background: url('background.01.jpg') no-repeat center center/cover;
     height: 100vh;
 }
 
