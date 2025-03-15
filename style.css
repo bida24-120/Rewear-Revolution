@@ -9,7 +9,7 @@ body {
 
 /* Apply background image only on the home page */
 .home {
-    background: url('background.01.jpg') no-repeat center center/cover;
+    background: url('background.jpg') no-repeat center center/cover;
     height: 100vh;
 }
 
@@ -87,8 +87,12 @@ header p {
     background: #ff6b6b;
     border-radius: 8px;
     text-decoration: none;
-    transi
+    transition: 0.3s;
+}
 
+.btn:hover {
+    background: #e55b5b;
+}
 /* Elegant and modern style */
 body {
     font-family: 'Poppins', sans-serif;
